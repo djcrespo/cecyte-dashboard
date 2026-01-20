@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  cecyte-dash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cecyte-dashboard
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    networks:
+      - default
+    environment:
+      - VIRTUAL_HOST=cecyte.djcrespo.dev
+      - LETSENCRYPT_HOST=cecyte.djcrespo.dev
+      - VIRTUAL_PORT=3000
+networks:
+  default:
+    external:
+      name: net-proxy

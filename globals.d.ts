@@ -1,0 +1,6 @@
+declare module 'jquery'
+declare module 'vue3-apexcharts'
+declare module 'rater-js/index'
+declare module 'sweetalert2/dist/sweetalert2.js'
+declare module 'nuxt-storage'
+declare module 'vue3-clipboard'

@@ -9,12 +9,12 @@
             </button>
           </div>
 
-          <b-form class="app-search d-none d-md-block me-auto">
+          <!-- <b-form class="app-search d-none d-md-block me-auto">
             <div class="position-relative">
-              <b-form-input type="search" placeholder="Search..." autocomplete="off" />
+              <b-form-input type="search" placeholder="Buscar..." autocomplete="off" />
               <Icon name="iconamoon:search-duotone" class="search-widget-icon" />
             </div>
-          </b-form>
+          </b-form> -->
         </div>
 
         <div class="d-flex align-items-center gap-1">
@@ -26,7 +26,7 @@
           </div>
 
           <!-- Category -->
-          <DropDown class="topbar-item d-none d-lg-flex">
+          <!-- <DropDown class="topbar-item d-none d-lg-flex">
             <button type="button" class="topbar-button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <Icon name="iconamoon:apps" class="fs-24 align-middle" />
             </button>
@@ -40,7 +40,7 @@
                 </a>
               </div>
             </div>
-          </DropDown>
+          </DropDown> -->
 
           <!-- Notification -->
           <DropDown custom-class="topbar-item">
@@ -109,18 +109,18 @@
           </DropDown>
 
           <!-- Theme Setting -->
-          <div class="topbar-item">
+          <!-- <div class="topbar-item">
             <button type="button" class="topbar-button" v-b-toggle="'right-sidebar'">
               <Icon name="iconamoon:settings-duotone" class="fs-24 align-middle" />
             </button>
-          </div>
+          </div> -->
 
           <!-- Activity -->
-          <div class="topbar-item d-none d-md-flex">
+          <!-- <div class="topbar-item d-none d-md-flex">
             <button type="button" class="topbar-button" v-b-toggle="'activity-offcanvas'">
               <Icon name="iconamoon:history-duotone" class="fs-24 align-middle" />
             </button>
-          </div>
+          </div> -->
 
           <!-- Profile -->
           <DropDown custom-class="topbar-item">
@@ -131,7 +131,7 @@
             </a>
 
             <div class="dropdown-menu dropdown-menu-end">
-              <h6 class="dropdown-header">Welcome Gaston!</h6>
+              <h6 class="dropdown-header">Bienvenido!</h6>
 
               <NuxtLink v-for="(item, idx) in profileMenuItems" :key="idx" :to="item.url" class="dropdown-item">
                 <i class="bx text-muted fs-18 align-middle me-1" :class="item.icon"></i>
@@ -142,7 +142,7 @@
 
               <NuxtLink class="dropdown-item text-danger" to="/auth/sign-in">
                 <i class="bx bx-log-out fs-18 align-middle me-1"></i>
-                <span class="align-middle">Logout</span>
+                <span class="align-middle">Cerrar sesión</span>
               </NuxtLink>
             </div>
           </DropDown>

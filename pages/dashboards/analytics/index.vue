@@ -1,5 +1,5 @@
 <template>
-  <PageBreadcrumb title="Analytics" subtitle="Dashboards" />
+  <PageBreadcrumb title="Vista general" subtitle="Dashboard" />
 
   <b-row>
     <b-col xxl="3">
@@ -16,24 +16,24 @@
           <b-row class="g-0">
             <b-col lg="4">
               <div class="p-3">
-                <b-card-title tag="h4"> Conversions </b-card-title>
+                <b-card-title tag="h4"> Atracción de talento </b-card-title>
 
                 <ApexChart :chart="conversionsChart" class="apex-charts mb-2 mt-n2" />
 
                 <b-row class="text-center">
                   <b-col cols="6">
-                    <p class="text-muted mb-2">This Week</p>
-                    <h3 class="text-dark mb-3">23.5k</h3>
+                    <p class="text-muted mb-2">Este mes</p>
+                    <h3 class="text-dark mb-3">12</h3>
                   </b-col>
 
                   <b-col cols="6">
-                    <p class="text-muted mb-2">Last Week</p>
-                    <h3 class="text-dark mb-3">41.05k</h3>
+                    <p class="text-muted mb-2">Mes pasado</p>
+                    <h3 class="text-dark mb-3">30</h3>
                   </b-col>
                 </b-row>
 
                 <div class="text-center">
-                  <b-button variant="light" type="button" class="shadow-none w-100"> View Details </b-button>
+                  <b-button variant="light" type="button" class="shadow-none w-100"> Ver detalles </b-button>
                 </div>
               </div>
             </b-col>
@@ -41,16 +41,16 @@
             <b-col lg="8" class="border-start">
               <div class="p-3">
                 <div class="d-flex justify-content-between align-items-center">
-                  <b-card-title tag="h4"> Performance </b-card-title>
+                  <b-card-title tag="h4"> Postulaciones </b-card-title>
                   <div>
-                    <b-button variant="outline-light" size="sm" class="me-1">ALL</b-button>
+                    <b-button variant="outline-light" size="sm" class="me-1">TODO</b-button>
                     <b-button variant="outline-light" size="sm" class="me-1">1M</b-button>
                     <b-button variant="outline-light" size="sm" class="me-1">6M</b-button>
                     <b-button variant="outline-light" size="sm" class="active">1Y</b-button>
                   </div>
                 </div>
 
-                <b-alert v-model="performanceAlert" variant="info" class="mt-3 text text-truncate mb-0"> We regret to inform you that our server is currently experiencing technical difficulties. </b-alert>
+                <!-- <b-alert v-model="performanceAlert" variant="info" class="mt-3 text text-truncate mb-0"> We regret to inform you that our server is currently experiencing technical difficulties. </b-alert> -->
 
                 <div dir="ltr">
                   <ApexChart :chart="performanceChart" class="apex-charts" />
@@ -63,13 +63,13 @@
     </b-col>
   </b-row>
 
-  <b-row>
+  <!-- <b-row>
     <b-col cols="12">
       <SessionsByCountry />
     </b-col>
-  </b-row>
+  </b-row> -->
 
-  <b-row>
+  <!-- <b-row>
     <b-col lg="4">
       <SessionsByBrowser />
     </b-col>
@@ -77,7 +77,7 @@
     <b-col lg="8">
       <TopPages />
     </b-col>
-  </b-row>
+  </b-row> -->
 </template>
 
 <script setup lang="ts">

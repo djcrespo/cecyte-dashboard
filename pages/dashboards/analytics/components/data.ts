@@ -2,31 +2,30 @@ import type { ApexChartType, StatisticCardType } from '~/types'
 import type { SessionByBrowserType, SessionType, TopPagesTableType } from '~/pages/dashboards/analytics/components/types'
 
 export const statistics: StatisticCardType[] = [
-  {
-    icon: 'iconamoon:eye-duotone',
-    variant: 'primary',
-    title: 'Page View',
-    statistic: 13647
-  },
+  // {
+  //   icon: 'iconamoon:eye-duotone',
+  //   variant: 'primary',
+  //   title: 'Page View',
+  //   statistic: 13647
+  // },
   {
     icon: 'iconamoon:link-external-duotone',
     variant: 'success',
-    title: 'Clicks',
-    statistic: 9526
+    title: 'Convocatorias abiertas',
+    statistic: 5
   },
-  {
-    icon: 'iconamoon:trend-up-bold',
-    variant: 'danger',
-    title: 'Conversions',
-    statistic: 65.2,
-    suffix: '%'
-  },
+  // {
+  //   icon: 'iconamoon:trend-up-bold',
+  //   variant: 'danger',
+  //   title: 'Conversions',
+  //   statistic: 65.2,
+  //   suffix: '%'
+  // },
   {
     icon: 'iconamoon:profile-circle-duotone',
     variant: 'warning',
-    title: 'New Users',
-    statistic: 9.5,
-    suffix: 'k'
+    title: 'Nuevas postulaciones',
+    statistic: 10
   }
 ]
 
@@ -78,7 +77,7 @@ export const conversionsChart: ApexChartType = {
       dashArray: 4
     },
     colors: ['#7f56da', '#22c55e'],
-    labels: ['Returning Customer'],
+    labels: ['Talento contratado'],
     responsive: [
       {
         breakpoint: 380,
@@ -105,12 +104,12 @@ export const performanceChart: ApexChartType = {
   type: 'line',
   series: [
     {
-      name: 'Page Views',
+      name: 'Postulaciones esperadas',
       type: 'bar',
       data: [34, 65, 46, 68, 49, 61, 42, 44, 78, 52, 63, 67]
     },
     {
-      name: 'Clicks',
+      name: 'Postulaciones recibidas',
       type: 'area',
       data: [8, 12, 7, 17, 21, 11, 5, 9, 7, 29, 12, 35]
     }
@@ -210,7 +209,7 @@ export const performanceChart: ApexChartType = {
         {
           formatter: function (y) {
             if (typeof y !== 'undefined') {
-              return y.toFixed(1) + 'k'
+              return y
             }
             return y
           }
@@ -218,7 +217,7 @@ export const performanceChart: ApexChartType = {
         {
           formatter: function (y) {
             if (typeof y !== 'undefined') {
-              return y.toFixed(1) + 'k'
+              return y
             }
             return y
           }

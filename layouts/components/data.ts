@@ -64,32 +64,32 @@ export const notifications: NotificationType[] = [
 export const profileMenuItems: MenuItemType[] = [
   {
     key: 'profile',
-    label: 'Profile',
+    label: 'Perfil',
     icon: 'bx-user-circle',
     url: ''
   },
-  {
-    key: 'message',
-    label: 'Message',
-    icon: 'bx-message-dots',
-    url: ''
-  },
-  {
-    key: 'pricing',
-    label: 'Pricing',
-    icon: 'bx-wallet',
-    url: ''
-  },
+  // {
+  //   key: 'message',
+  //   label: 'Message',
+  //   icon: 'bx-message-dots',
+  //   url: ''
+  // },
+  // {
+  //   key: 'pricing',
+  //   label: 'Pricing',
+  //   icon: 'bx-wallet',
+  //   url: ''
+  // },
   {
     key: 'help',
-    label: 'Help',
+    label: 'Ayuda',
     icon: 'bx-help-circle',
     url: ''
   },
-  {
-    key: 'lock-screen',
-    label: 'Lock Screen',
-    icon: 'bx-lock',
-    url: ''
-  }
+  // {
+  //   key: 'lock-screen',
+  //   label: 'Lock Screen',
+  //   icon: 'bx-lock',
+  //   url: ''
+  // }
 ]

@@ -10,18 +10,18 @@
           </b-col>
           <b-col lg="6">
             <div class="p-4">
-              <div class="mx-auto mb-4 text-center auth-logo">
+              <!-- <div class="mx-auto mb-4 text-center auth-logo">
                 <LogoBox />
-              </div>
+              </div> -->
 
-              <h2 class="fw-bold text-center fs-18">Sign In</h2>
-              <p class="text-muted text-center mt-1 mb-4">Enter your email address and password to access admin panel.</p>
+              <h2 class="fw-bold text-center fs-18">Iniciar sesión</h2>
+              <p class="text-muted text-center mt-1 mb-4">Ingrese su dirección de correo electrónico y contraseña para acceder al panel de administración.</p>
 
               <b-row class="justify-content-center">
                 <b-col md="8" cols="12">
                   <b-form @submit.prevent="handleLogin" class="authentication-form">
-                    <b-form-group label="Email" class="mb-3">
-                      <b-form-input type="email" id="example-email" name="email" v-model="v.email.$model" placeholder="Enter your email" />
+                    <b-form-group label="Correo electrónico" class="mb-3">
+                      <b-form-input type="email" id="example-email" name="email" v-model="v.email.$model" placeholder="Ingrese su correo electrónico" />
                       <div v-if="v.email.$error" class="text-danger">
                         <span v-for="(err, idx) in v.email.$errors" :key="idx">
                           {{ err.$message }}
@@ -29,8 +29,8 @@
                       </div>
                     </b-form-group>
 
-                    <b-form-group label="Password" class="mb-3">
-                      <b-form-input type="password" id="example-password" name="password" v-model="v.password.$model" placeholder="Enter your password" />
+                    <b-form-group label="Contraseña" class="mb-3">
+                      <b-form-input type="password" id="example-password" name="password" v-model="v.password.$model" placeholder="Ingrese su contraseña" />
                       <div v-if="v.password.$errors" class="text-danger">
                         <span v-for="(err, idx) in v.password.$errors" :key="idx">
                           {{ err.$message }}
@@ -39,21 +39,21 @@
                     </b-form-group>
 
                     <div class="mb-3">
-                      <b-form-checkbox>Remember me</b-form-checkbox>
+                      <b-form-checkbox>Recordarme</b-form-checkbox>
                     </div>
 
                     <div class="mb-3 d-flex justify-content-center">
-                      <NuxtLink to="/auth/reset-password" class="text-muted text-unline-dashed"> Reset password </NuxtLink>
+                      <NuxtLink to="/auth/reset-password" class="text-muted text-unline-dashed"> Restablecer contraseña </NuxtLink>
                     </div>
 
                     <div class="mb-1 text-center d-grid">
-                      <b-button variant="primary" type="submit"> Sign In </b-button>
+                      <b-button variant="primary" type="submit" @click="handleSubmit"> Iniciar sesión </b-button>
                     </div>
                   </b-form>
 
-                  <p class="mt-3 fw-semibold no-span">OR sign with</p>
+                  <!-- <p class="mt-3 fw-semibold no-span">OR sign with</p>
 
-                  <SignWithOptions />
+                  <SignWithOptions /> -->
                 </b-col>
               </b-row>
             </div>
@@ -63,8 +63,8 @@
     </b-card>
 
     <p class="text-white mb-0 text-center">
-      Don't have an account?
-      <NuxtLink to="/auth/sign-up" class="text-white fw-bold ms-1">Sign Up</NuxtLink>
+        No tienes cuenta?
+      <NuxtLink to="/auth/sign-up" class="text-white fw-bold ms-1">Regístrate</NuxtLink>
     </p>
   </b-col>
 </template>

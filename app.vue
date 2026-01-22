@@ -36,7 +36,7 @@ useHead({
     { name: 'author', content: 'Techzaa' },
     { name: 'description', content: 'A fully responsive premium admin dashboard template.' }
   ],
-  link: [{ rel: 'shortcut icon', href: logo }]
+  link: [{ rel: 'shortcut icon', href: favicon }]
 })
 
 useSeoMeta({

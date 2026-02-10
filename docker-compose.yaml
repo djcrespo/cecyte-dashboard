@@ -9,14 +9,13 @@ services:
     restart: unless-stopped
     ports:
       - 3000:3000
-    networks:   
+    networks:
       - default
     environment:
-      - VIRTUAL_HOST=cecyte.djcrespo.dev
-      - LETSENCRYPT_HOST=cecyte.djcrespo.dev
+      - VIRTUAL_HOST=cecyte.cosvion.com
+      - LETSENCRYPT_HOST=cecyte.cosvion.com
       - VIRTUAL_PORT=3000
 networks:
   default:
     external:
       name: net-proxy
-  

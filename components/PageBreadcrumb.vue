@@ -3,12 +3,12 @@
     <b-col cols="12">
       <div class="page-title-box">
         <h4 class="mb-0 fw-semibold">{{ title }}</h4>
-        <ol class="breadcrumb mb-0">
+        <!-- <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
             <NuxtLink to="">{{ subtitle }}</NuxtLink>
           </li>
           <li class="breadcrumb-item active">{{ title }}</li>
-        </ol>
+        </ol> -->
       </div>
     </b-col>
   </b-row>

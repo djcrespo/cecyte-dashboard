@@ -27,10 +27,10 @@ import '~/assets/scss/app.scss'
 import '~/assets/scss/icons.scss'
 
 import favicon from '~/assets/images/favicon.ico'
-import logo from '~/assets/images/logo.png'
+import logo from '~/assets/images/LOGO.png'
 
 useHead({
-  title: ' Responsive Admin Dashboard Template',
+  title: ' CECYTE dashboard',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
     { name: 'author', content: 'Techzaa' },
@@ -40,7 +40,7 @@ useHead({
 })
 
 useSeoMeta({
-  title: ' Responsive Admin Dashboard Template',
+  title: ' CECYTE dashboard',
   description: 'A fully responsive premium admin dashboard template.'
 })
 </script>

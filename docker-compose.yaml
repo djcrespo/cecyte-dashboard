@@ -9,7 +9,7 @@ services:
     restart: unless-stopped
     ports:
       - 3000:3000
-    networks:
+    networks:   
       - default
     environment:
       - VIRTUAL_HOST=cecyte.djcrespo.dev
@@ -19,3 +19,4 @@ networks:
   default:
     external:
       name: net-proxy
+  

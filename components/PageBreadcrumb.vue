@@ -23,6 +23,6 @@ type PageBreadcrumbPropsType = {
 const props = defineProps<PageBreadcrumbPropsType>()
 
 useHead({
-  title: `${props.title} | Reback - Responsive Admin Dashboard Template`
+  title: `${props.title} | CECYTE Dashboard`
 })
 </script>
